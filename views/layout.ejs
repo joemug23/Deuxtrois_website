@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/mdl/material.min.css">
+    <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/css/responsiveslides.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <title> DTI | <%= title %> </title>
+</head>
+<body>
+    <div class="container">
+        <!-- navbar header -->
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--scroll">
+                <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title" id="titre"> DeuxTrois Initiative</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="/">Accueil</a>
+                    <a class="mdl-navigation__link" href="#a_propos">A propos</a>
+                    <a class="mdl-navigation__link" href="#services">Services</a>
+                    <a class="mdl-navigation__link" href="#portfolio">Portfolio</a>
+                    <a class="mdl-navigation__link" href="#temoignages">Temoignages</a>
+                    <a class="mdl-navigation__link" href="#contact">Contact</a>
+                    <a class="mdl-navigation__link" href="#">Donate</a>
+                </nav>
+                </div>
+            </header>
+            
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <!-- acueil -->
+                    <div class="container" id="accueil">
+                        <% include pages/accueil.ejs %>
+                    </div>
+                    <div class="mdl-grid animated " id="about_articles">
+                        <div class="mdl-cell mdl-cell--3-col">
+                            Recent activities and articles
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--7-col">
+                            
+                            <!-- a propos de nous -->
+                            <div class="container indented_text " id="a_propos">
+                                <% include pages/a_propos.ejs %>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nos services -->
+                    <div class="container indented_text animated " id="services">
+                        <% include pages/services.ejs %>
+                    </div>
+                    
+                    <!-- portfolio -->
+                    <div class="container indented_text animated" id="portfolio">
+                        <% include pages/portfolio.ejs %>
+                    </div>
+                    
+                    <!-- temoignages -->
+                    <div class="container indented_text animated" id="temoignages">
+                        <% include pages/temoignages.ejs %>
+                    </div>
+                    
+                    <!-- contactez nous -->
+                    <div class="container indented_text animated " id="contact">
+                        <% include pages/contact.ejs %>
+                    </div>
+                    
+                    <div id="side-menu">
+                        <ul class="">
+                            <li><a href="/#accueil"><span><img src="/img/home.png"></span><br> Accueil</a></li>
+                            <li><a href="#a_propos"><span><img src="/img/about.png"></span><br> A propos</a></li>
+                            <li><a href="#services"><span><img src="/img/service.png"></span><br> Services</a></li>
+                            <li><a href="#portfolio"><span><img src="/img/blogger.png"></span><br> Portfolio</a></li>
+                            <li><a href="#temoignages"><span><img src="/img/comment.png"></span><br> Temoignages</a></li>
+                            <li><a href="#contact"><span><img src="/img/contact.png"></span><br> Contact</a></li>
+                            <li><a href="#"><span><img src="/img/gift.png"></span><br> Donate</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- footer -->
+                    <footer class="mdl-mega-footer">
+                        
+                        <div class="mdl-mega-footer--bottom-section">
+                            <div class="mdl-logo">
+                                DeuxTrois Initiative | Designed by <a href="https://github.com/joemug23/">Jonathan Mugula</a> &copy; 2017
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/waypoints.js"></script>
+    <script src="/mdl/material.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/ScrollMagic.min.js"></script>
+    <script src="/js/particles.min.js"></script>
+    <!-- <script src="/js/jquery.waypoints.min.js"></script> -->
+    <script src="/js/main.js"></script>
+    <!-- <script src="/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="/js/responsiveslides.min.js"></script>
+    <script>
+        $(function() {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                pager: true,
+                prevText: "<<<",
+                nextText: ">>>",
+                // manualControls: "#slider3-pager",
+                
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                loop: true,
+				lazyLoad: false,
+                autoPlay: true,
+                smartSpeed: 450,
+                autoplayHoverPause:true,
+				navigation: false,
+				navigationText: false,
+                pagination: true,
+                animateOut: 'slideOutDown',
+                animateIn: 'flipInX',
+            });
+        });
+    </script>
+    <!-- <script>
+        particlesJS.load('contact', '/json/particles.json', function(){});
+    </script> -->
+</body>
+</html>

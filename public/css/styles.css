@@ -1,0 +1,361 @@
+body {
+    font-family: 'Lora', serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#titre {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+}
+
+.mdl-navigation__link:hover {
+    color: #004;
+    background: #4b4548;
+    font-family: 'Spirax', cursive;
+}
+
+#accueil {
+    background: url(/img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#services {
+    height: 550px;
+    background: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#about_articles {
+    background: url(/img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#portfolio {
+    height: 550px;
+    background: url(/img/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+#temoignages {
+    background: url(/img/bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.testimony {
+    height: 200px;
+    text-indent: 30px;
+    margin-left: 170px;
+    margin-right: 170px;
+    
+}
+
+#contact {
+    background: url(/img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#contact_content {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;    
+}
+
+#side-menu {
+    position: fixed;
+    top: 15%;
+    right: 0;
+    width: 140px;
+}
+
+#side-menu ul{
+    list-style: none;
+}
+
+#side-menu ul li{
+    height: 56px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    display: block;
+    background: #4b4548;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+#side-menu ul li:hover{
+    background: brown;
+}
+
+#side-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.service img {
+    height: 400px;
+    width: 100%;
+}
+
+q {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+.slider {
+    position: relative;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+.rslides li img {
+    height: 550px;
+}
+
+.rslides_tabs {
+    z-index: 999;
+    padding: 0.3em 5em;
+    margin-top: 6px;
+}
+
+.rslides_tabs li {
+    display: inline-block;
+    margin: 0 2px;
+    list-style: none;
+}
+
+.rslides_tabs li:first-child {
+    margin-left: 0;
+}
+
+.rslides_tabs .rslides_here a {
+    color: #fff;
+    font-weight: bold;
+}
+
+#slider3-pager a {
+    display: inline-block;
+}
+
+#slider3-pager img {
+    float: left;
+    display: block;
+}
+
+
+.indented_text {
+    padding: 20px;
+}
+
+.rslides_tabs a {
+    border-bottom: 4px solid #ddd;
+}
+
+#slider3-pager .rslides_here a {
+    background: transparent;
+    border-bottom: 4px solid #ffb500;
+}
+
+a.rslides_nav.rslides1_nav.prev {
+    position: absolute;
+    left: 0%;
+    color: #fff;
+    top: 7%;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.rslides_nav.rslides1_nav.next {
+    right: 0%;
+    position: absolute;
+    color: #fff;
+    top: 7%;
+    z-index: 9999;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*-- responsive-mediaqueries --*/
+
+@media (max-width:1440px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 4px;
+        width: 8%;
+    }
+    #slider3-pager img {
+        float: left;
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width:1366px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 4px;
+        width: 8%;
+    }
+}
+
+@media (max-width:1080px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 2px;
+        width: 8%;
+    }
+}
+
+@media (max-width:900px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 1px;
+        width: 8%;
+    }
+}
+
+@media (max-width:768px) {
+    .rslides_tabs a {
+        border-bottom: 2px solid #ddd;
+    }
+    #slider3-pager .rslides_here a {
+        background: transparent;
+        border-bottom: 2px solid #ffb500;
+    }
+}
+
+@media (max-width:667px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 1px;
+        width: 8%;
+    }
+    .rslides_tabs {
+        z-index: 999;
+        padding: 0.3em 1em;
+        margin-top: 6px;
+    }
+    a.rslides_nav.rslides1_nav.prev,
+    a.rslides_nav.rslides1_nav.next {
+        font-size: 0.9em;
+    }
+    .agile_banner_text_info {
+        top: 32%;
+        left: 30%;
+    }
+}
+
+@media (max-width:600px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 1px;
+        width: 8%;
+    }
+    .rslides_tabs {
+        padding: 0.2em 0.5em;
+        margin-top: 4px;
+    }
+    .agile_banner_text_info {
+        top: 30%;
+        left: 28%;
+    }
+}
+
+@media (max-width:568px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 0px;
+        width: 8%;
+    }
+    .rslides_tabs {
+        padding: 0.2em 1.6em;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width:414px) {
+    .rslides_tabs {
+        padding: 0.2em 0.3em;
+        margin-top: 4px;
+    }
+}
+
+@media (max-width:384px) {
+    .rslides_tabs {
+        padding: 0.2em 1.6em;
+        margin-top: 4px;
+    }
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 1px;
+        width: 7%;
+    }
+    a.rslides_nav.rslides1_nav.prev,
+    a.rslides_nav.rslides1_nav.next {
+        font-size: 0.7em;
+        top: 64%;
+    }
+}
+
+@media (max-width:320px) {
+    .rslides_tabs li {
+        display: inline-block;
+        margin: 0 0px;
+        width: 7%;
+    }
+}
+
+/*-- //slider-css --*/
